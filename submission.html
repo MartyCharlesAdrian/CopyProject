@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+
+  <div class="topnav">
+    <div class="dropdown">
+      <button class="dropbtn">Profile
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="profile.html">Profile</a>
+      <a href="home.html">Logout</a>
+    </div>  
+    </div>
+    <a href="contact.html">Contact</a>
+    
+    
+      <div class="dropdown">
+        <button class="dropbtn">About
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="aboutbb.html">Business Background</a>
+          <a href="aboutbts.html">Behind the Scenes</a>
+        </div>
+      </div> 
+  
+      <div class="dropdown">
+        <button class="dropbtn">Blogs
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="photog.html">Photo Gallery</a>
+          <a href="review.html">Reviews</a>
+          <a href="submission.html">Submissions</a>
+        </div>
+      </div>
+  
+    <a href="home.html">Home</a>
+</div>
+
+<h1>SUBMISSIONS</h1>
+
+    <div class="columnsub">
+<h3>Current Account: </h3>
+<h3>Name Tag: </h3>
+<br><br>
+<div class="box3">
+    <b>Review</b> <br><br>
+
+    <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 star</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 star</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 star</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 star</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+    </div><br> 
+    <textarea id="review" name="review" rows="9" cols="80"></textarea><br><br><br><br><br><br>
+</div>
+</div>
+
+<div class="columnsub">
+  <b>Submission Guidelines:</b><br>
+    The nametag shown in current account will be displayed in the submitted reviews.<br><br>
+  
+    To submit a review, you must select a rating and input your review. When done, click "submit"<br>
+    button. You can also include a picture of the product but it is not required to submit a review<br><br>
+    
+    Not logged in yet? Click the login button to be redirected to the <a href="login.html">Login Page</a>
+ 
+<div class="box4">
+<b>Photo</b> <br>
+<p><img style="float:right" id="output" width="165" /></p>
+<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;">Click here to upload image</label></p>
+</div>
+</form>
+
+</div>
+<div style="text-align:center">  
+<input id="save" type="submit" value="Submit" onclick="alert('Submitted Review')">
+</div>
+</body>
+</html>
